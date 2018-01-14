@@ -2,26 +2,33 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
+        var firstCat = {name:"billy",clickCount:0}
 
-        var counter = 0;
-   
         $(document).ready(function() {
-   
-            $("#addMe").click(function(){
-                counter++;
-   
-                $("#theCount").text(counter);
+
+            $("#firstCatName").text(firstCat.name);
+
+            $("#firstCatCountButton").click(function(){
+                firstCat.clickCount++;
+
+            $("#firstCatCount").text(firstCat.clickCount);
+
             });
-   
+
         });
+
+
     </script>
 </head>
 </head>
 
 <body>
-<h1 style="text-align:center">Click the cat</h1>
-<img src="https://lh3.ggpht.com/nlI91wYNCrjjNy5f-S3CmVehIBM4cprx-JFWOztLk7vFlhYuFR6YnxcT446AvxYg4Ab7M1Fy0twaOCWYcUk=s0#w=640&h=426" alt="Avatar" id="addMe" style="width:200px;border-radius: 50%; margin: 0 auto; display: block">    
-<div id="theCount" style="text-align: center;"></div>
+<h1 id="firstCatName" style="text-align:center"></h1>
+<img src="https://lh3.ggpht.com/nlI91wYNCrjjNy5f-S3CmVehIBM4cprx-JFWOztLk7vFlhYuFR6YnxcT446AvxYg4Ab7M1Fy0twaOCWYcUk=s0#w=640&h=426" alt="Avatar" id="firstCatCountButton" style="width:200px;border-radius: 50%; margin: 0 auto; display: block">
+<div id="firstCatCount" style="text-align: center;"></div>
     <br/>
+
+
+
 
 </body>
