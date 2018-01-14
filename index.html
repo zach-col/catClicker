@@ -3,16 +3,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
         var firstCat = {name:"billy",clickCount:0}
+        var secondCat = {name:"bob", clickCount:0}
 
         $(document).ready(function() {
 
             $("#firstCatName").text(firstCat.name);
+            $("#firstCatCount").text(firstCat.clickCount);
 
             $("#firstCatCountButton").click(function(){
                 firstCat.clickCount++;
-
             $("#firstCatCount").text(firstCat.clickCount);
-
             });
 
         });
