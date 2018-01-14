@@ -6,13 +6,21 @@
         var secondCat = {name:"bob", clickCount:0}
 
         $(document).ready(function() {
-
+            //load first cat
             $("#firstCatName").text(firstCat.name);
             $("#firstCatCount").text(firstCat.clickCount);
 
             $("#firstCatCountButton").click(function(){
                 firstCat.clickCount++;
-            $("#firstCatCount").text(firstCat.clickCount);
+                $("#firstCatCount").text(firstCat.clickCount);
+            });
+            //load second cat
+            $("#secondCatName").text(secondCat.name);
+            $("#secondCatCount").text(secondCat.clickCount);
+
+            $("#secondCatCountButton").click(function(){
+                secondCat.clickCount++;
+                $("#secondCatCount").text(secondCat.clickCount);
             });
 
         });
@@ -26,6 +34,11 @@
 <h1 id="firstCatName" style="text-align:center"></h1>
 <img src="https://lh3.ggpht.com/nlI91wYNCrjjNy5f-S3CmVehIBM4cprx-JFWOztLk7vFlhYuFR6YnxcT446AvxYg4Ab7M1Fy0twaOCWYcUk=s0#w=640&h=426" alt="Avatar" id="firstCatCountButton" style="width:200px;border-radius: 50%; margin: 0 auto; display: block">
 <div id="firstCatCount" style="text-align: center;"></div>
+    <br/>
+
+<h1 id="secondCatName" style="text-align:center"></h1>
+<img src="https://lh3.ggpht.com/kixazxoJ2ufl3ACj2I85Xsy-Rfog97BM75ZiLaX02KgeYramAEqlEHqPC3rKqdQj4C1VFnXXryadFs1J9A=s0#w=640&h=496" alt="Avatar" id="secondCatCountButton" style="width:200px;border-radius: 50%; margin: 0 auto; display: block">
+<div id="secondCatCount" style="text-align: center;"></div>
     <br/>
 
 
